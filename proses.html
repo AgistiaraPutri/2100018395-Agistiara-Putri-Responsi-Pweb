@@ -1,0 +1,12 @@
+<?php 
+	$nama = $_POST['nama']
+
+	echo "<head><title>File TXT </head></title>";
+	$fp = fopen("file.txt", "a+");
+	fputs($fp,"$nama_pengirim | $nama_penerima | $alamat | $jarak\n");
+	fclose($fp);
+
+	echo "Terima Kasih Telah Menggunakan Jasa Pengiriman Kami<br>";
+	echo "<a href=responsi.html> Isi Pengiriman </a><br>";
+	echo "<a href=lihat.html> Lihat Hasil </a><br>";
+?>
